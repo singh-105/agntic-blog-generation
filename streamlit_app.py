@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-API_BASE = "http://localhost:8000"
+API_BASE = "https://agntic-blog-generation.onrender.com"
 
 # ── Page config ──────────────────────────────────────────────
 st.set_page_config(
