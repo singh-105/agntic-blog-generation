@@ -19,7 +19,7 @@ class BlogNode:
         Important: Always write in English only, regardless of transcript language.
         
         Transcript: {transcript}"""
-        system_message = prompt.format(transcript=transcript[:3000])
+        system_message = prompt.format(transcript=transcript[:15000])
         response = self.llm.invoke(system_message)
         return {"blog": {"title": response.content}}
 
