@@ -56,20 +56,20 @@ Each step is a LangGraph node. They share a common state object — each node re
 
 ```
 agntic-blog-generation/
-├── app.py                     # FastAPI — /blogs and /blogs/yt routes
-├── streamlit_app.py           # Streamlit frontend
+├── app.py                        # FastAPI — /blogs and /blogs/yt routes
+├── streamlit_app.py              # Streamlit frontend
 ├── src/
 │   ├── graphs/
-│   │   └── graph_builder.py   # LangGraph graph (topic + yt flows)
+│   │   └── graph_builder.py      # LangGraph graph (topic + yt flows)
 │   ├── nodes/
-│   │   ├── blog_node.py       # Title + content generation nodes
-│   │   └── yt_node.py         # YouTube transcript extraction
+│   │   ├── blog_node.py          # Title + content generation nodes
+│   │   └── yt_node.py            # YouTube transcript extraction
 │   ├── states/
-│   │   └── blogstate.py       # Shared state TypedDict
+│   │   └── blogstate.py          # Shared state TypedDict
 │   └── llms/
-│       └── groqllm.py         # Groq LLM setup
+│       └── groqllm.py            # Groq LLM setup
 ├── requirements.txt
-└── .env                       # API keys (not on GitHub)
+└── .env                           # API keys (not on GitHub)
 ```
 
 ---
@@ -146,4 +146,15 @@ Both return:
 
 - Videos without captions won't work
 - Transcript is currently capped at ~3000 characters (best for 10–20 min videos)
-- Private or age-restricted videos can't be accessed
+- Private or age-restricted videos
+
+---
+
+## 👨‍💻 About the Developer
+
+Built by **Harsh M Singh** — B.Tech CSE (Data Science), Lokmanya Tilak College of Engineering, Mumbai.
+
+- 🔗 GitHub: [github.com/singh-105](https://github.com/singh-105)
+- 💼 AI Intern @ Deep Cytes
+
+Feel free to connect, star the repo, or open an issue!
